@@ -44,6 +44,7 @@ const App = () => {
 
       return imgs.hits;
     } catch (error) {
+      setLoader(false);
       toast.error(`${error.message}`);
     } finally {
       setLoader(false);
